@@ -56,6 +56,26 @@
 			font-weight: bold;
 			color: white;
 		}
+		.vertical-menu {
+			width: 200px; /* Set a width if you like */
+		}
+
+		.vertical-menu a {
+			background-color: #eee; /* Grey background color */
+			color: black; /* Black text color */
+			display: block; /* Make the links appear below each other */
+			padding: 12px; /* Add some padding */
+			text-decoration: none; /* Remove underline from links */
+		}
+
+		.vertical-menu a:hover {
+			background-color: #ccc; /* Dark grey background on mouse-over */
+		}
+
+		.vertical-menu a.active {
+			background-color: #4CAF50; /* Add a green color to the "active/current" link */
+			color: white;
+		}
   </style>
   <title>Index CyclingLand</title>
   <link rel="shortcut icon" href="https://cyclingland.github.io/favicon_cl.ico" type="image/x-icon">
@@ -75,7 +95,13 @@
 			<h2 id="top_title">CyclingLand</h2>
 		</a>
 	</div>
-	
+	<div class="vertical-menu">
+		<a href="#" class="active">Links</a>
+		<a href="#">About this</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+	</div>
 	<div id="index" style="margin-top:70px;">
 		<p style="font-size:130%;">Welcome to my repository!</p>
 		<nav>

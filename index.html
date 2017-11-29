@@ -28,54 +28,46 @@
 			position: fixed;
 			overflow: hidden;
 			top: 0;
-        }
+			background-color:#098ffd;
+			width:100%;
+			height:60px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 		.navbar a {
 			float: left;
 			display: block;
 			color: #f2f2f2;
 			text-align: center;
-			padding: 0px 10px;
+			padding: 14px 16px;
 			text-decoration: none;
+			font-size: 17px;
 		}
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.navbar a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+			
 		#logo_top {
 			border: 1px solid #ddd;
 			border-radius: 4px;
 			padding: 0px;
 			width: 150px;
 			border-radius: 50%;
-			margin-top: 5px;
 			margin-left: 10px;
 		}
 		#top_title {
 			display: block;
 			font-size: 1.5em;
-			margin-top: 0.83em;
-			margin-bottom: 0.83em;
 			margin-left: 0;
 			margin-right: 0;
 			font-weight: bold;
 			color: white;
 		}
-		.vertical-menu {
-			width: 200px; /* Set a width if you like */
-		}
 
-		.vertical-menu a {
-			background-color: #eee; /* Grey background color */
-			color: black; /* Black text color */
-			display: block; /* Make the links appear below each other */
-			padding: 12px; /* Add some padding */
-			text-decoration: none; /* Remove underline from links */
-		}
-
-		.vertical-menu a:hover {
-			background-color: #ccc; /* Dark grey background on mouse-over */
-		}
-
-		.vertical-menu a.active {
-			background-color: #4CAF50; /* Add a green color to the "active/current" link */
-			color: white;
-		}
   </style>
   <title>Index CyclingLand</title>
   <link rel="shortcut icon" href="https://cyclingland.github.io/favicon_cl.ico" type="image/x-icon">
@@ -87,20 +79,16 @@
 <!-- Smooth scroll end -->
 </head>
 <body>
-	<div class="navbar" style="text-align:left;background-color:#098ffd;width:100%;height:60px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+	<div class="navbar">
 		<a href="#top">
 			<img id="logo_top" src="https://pbs.twimg.com/profile_images/867592936464297984/HBnOSgY1_400x400.jpg" style="width:50px;height:50px;">
 		</a>
 		<a href="#top">
 			<h2 id="top_title">CyclingLand</h2>
 		</a>
-	</div>
-	<div class="vertical-menu">
-		<a href="#" class="active">Links</a>
-		<a href="#">About this</a>
-		<a href="#">Link 2</a>
-		<a href="#">Link 3</a>
-		<a href="#">Link 4</a>
+		<a href="#home" class="active">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
 	</div>
 	<div id="index" style="margin-top:70px;">
 		<p style="font-size:130%;">Welcome to my repository!</p>

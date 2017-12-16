@@ -91,6 +91,12 @@
  		   height: 500px;
  		   width: 350px;
 	}
+	#sidenav-overlay {
+			z-index: -1;
+	}
+	.btn:focus{ 
+ 			 background-color: #1e88e5 
+	}
   </style>
 	<title>CyclingLand</title>
 	<link rel="shortcut icon" href="https://cyclingland.github.io/favicon_cl.ico" type="image/x-icon">
@@ -108,8 +114,8 @@
 		<script type="text/javascript" src="js/materialize.js"> </script>
 	
 	<script>
-		$ (document) .ready(function(e)) {
-			$(".button-collapse")	.sideNav ()	;		
+		$ (document) .ready(function($)) {
+			$(".button-collapse").sideNav('show');		
 		});
 	</script>
 </head>
@@ -121,7 +127,7 @@
 									 
     	  <a href="#!" class="brand-logo">Logo</a>
 		  
-    	  <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+    	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		 
     	  <ul class="right hide-on-med-and-down">
 			<li><a href="#intro">Intro</a></li>
@@ -129,7 +135,7 @@
      	   <li><a href="youtube.html">YouTube</a></li>
    	   </ul>
 		 
-   	   <ul class="side-nav" id="mobile-demo">
+   	   <ul class="side-nav" id="mobile-menu">
 			<li><a href="#intro">Intro</a></li>
     	    <li><a href="#about">About Me</a></li>
      	   <li><a href="youtube.html">YouTube</a></li>
@@ -140,6 +146,23 @@
   </nav>
 	
 <!-- End Navbar -->
+<!-- Start SideNav -->
+	  <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Achtergrond_f9586178a104b77d9b386e61e32c19a3.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png"></a>
+      <a href="#!name"><span class="white-text name">CyclingLand</span></a>
+      
+    </div></li>
+    <li><a href="#intro"><i class="material-icons">play_circle_outline</i>Intro</a></li>
+    <li><a href="#about"><i class="material-icons">account_circle</i>About me</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+<!-- End SideNav -->
 <!-- Start Splash -->
 	<div class="main">
 		<div id="Title-div">

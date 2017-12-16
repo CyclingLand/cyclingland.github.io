@@ -103,20 +103,44 @@
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<!-- Smooth scroll -->
 		<script src="https://cyclingland.github.io/dist/js/smooth-scroll.js"></script>
+	<!-- Navbar -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.js"> </script>
+	
+	<script>
+		$ (document) .ready(function(e)) {
+			$(".button-collapse")	.sideNav ()	;		
+		});
+	</script>
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper" style="background-color:#1e88e5;>
-        <a href="#!" class="brand-logo"><img src="https://cyclingland.github.io/Logo CyclingLand.jpg" style="width:50px;height:50px;border-radius:50%;border: 1px solid #ddd;padding: 0px;margin-left: 10px;margin-top:2px;"></a>
-        <ul class="right hide-on-med-and-down">
-			<li><a href="#about">About me</a></li>
-			<li><a href="youtube.html">YouTube</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+<!-- Start Navbar -->
+  <nav>
+	<div class="navbar-fixed">
+   	 <div class="nav-wrapper" style="background-color:#1e88e5;>
+									 
+    	  <a href="#!" class="brand-logo">Logo</a>
+		  
+    	  <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+		 
+    	  <ul class="right hide-on-med-and-down">
+			<li><a href="#intro">Intro</a></li>
+    	    <li><a href="#about">About Me</a></li>
+     	   <li><a href="youtube.html">YouTube</a></li>
+   	   </ul>
+		 
+   	   <ul class="side-nav" id="mobile-demo">
+			<li><a href="#intro">Intro</a></li>
+    	    <li><a href="#about">About Me</a></li>
+     	   <li><a href="youtube.html">YouTube</a></li>
+     	 </ul>
+		 
+   	 </div>
+	</div>
+  </nav>
 	
+<!-- End Navbar -->
+<!-- Start Splash -->
 	<div class="main">
 		<div id="Title-div">
 			<picture>
@@ -127,10 +151,11 @@
 			</div>
 		</div>
 	</div>
+<!-- End Splash -->
 	<div id="intro" style="margin-left:20px;" >
 		<p style="font-size:2em;padding-top:70px;font-weight: bold">Welcome to my repository!</p>
 			<a href="https://cyclingland.github.io/change_lemo.html"> Changelog Lemo Assistant </a>
-			<BR>
+			<br>
 			<a href="https://cyclingland.github.io/version_lemo.html"> Version Code Lemo Assistant </a>
 	</div>
 	<div class="space" style="heigt:200px;">

@@ -97,6 +97,12 @@
 	.btn:focus{ 
  			 background-color: #1e88e5 
 	}
+	.card-small {
+  			width: 400px;
+	}
+	.content {
+		margin-left: 20px !important;	
+	}
   </style>
 	<title>CyclingLand</title>
 	<link rel="shortcut icon" href="https://cyclingland.github.io/favicon_cl.ico" type="image/x-icon">
@@ -127,7 +133,6 @@ snowStorm.snowColor = '#99ccff'; // blue-ish snow!?
 snowStorm.flakesMaxActive = 96;  // show more snow on screen at once
 snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 </script>
-</head>
 
 <!-- End SnowScript-->
 </head>
@@ -136,10 +141,10 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <a href="#top" class="brand-logo"><img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png" style="max-width:100%;height:auto;width:65px;"></img></a>
+        <a href="#" class="brand-logo"><img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png" style="max-width:100%;height:auto;width:65px;" alt="Logo CyclingLand"></a>
         <ul class="right hide-on-med-and-down">
 		  <li><a href="#intro">Intro</a></li>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">Over mij</a></li>
           <li><a href="youtube.html">YouTube</a></li>
         </ul>
       </div>
@@ -151,9 +156,9 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 	  <ul id="slide-out" class="side-nav">
     <li><div class="user-view">
       <div class="background">
-        <img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Achtergrond_f9586178a104b77d9b386e61e32c19a3.jpg">
+        <img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Achtergrond_f9586178a104b77d9b386e61e32c19a3.jpg" alt="Background">
       </div>
-      <a href="#!user"><img class="circle" src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png"></a>
+      <a href="#!user"><img class="circle" src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png" alt="Logo CyclingLand"></a>
       <a href="#!name"><span class="white-text name">CyclingLand</span></a>
       
     </div></li>
@@ -168,7 +173,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 	<div class="main">
 		<div id="Title-div">
 			<picture>
-				<img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png" class="animated bounce" style="max-width:100%;height:auto;width:500px;"></img>
+				<img src="https://gtmetrix.com/reports/cyclingland.github.io/HO4yBH4q/pagespeed/Logo_20CyclingLand_transparant__ddb548ce0df322c993dea767ba8ad286.png" class="animated bounce" style="max-width:100%;height:auto;width:500px;" alt="Logo CyclingLand">
 			</picture>
 			<div id="Bottom">
 				<a HREF="#intro" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons left">keyboard_arrow_down</i></a>
@@ -176,19 +181,31 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 		</div>
 	</div>
 <!-- End Splash -->
+<div class="content">
 	<div id="intro" style="margin-left:20px;" >
-		<p style="font-size:2em;padding-top:70px;font-weight: bold">Welcome to my repository!</p>
-			<a href="https://cyclingland.github.io/change_lemo.html"> Changelog Lemo Assistant </a>
-			<br>
-			<a href="https://cyclingland.github.io/version_lemo.html"> Version Code Lemo Assistant </a>
+		<p style="font-size:2em;padding-top:70px;font-weight: bold">Welkom op deze website</p>
+		<p>Ik vind het leuk om een beetje met html dingen te proberen en daarvoor heb ik deze website gemaakt</p>
 	</div>
-	<div class="space" style="heigt:200px;">
-	</div>	
+	
+  <div id="about" class="card sticky-action" style="max-width:600px">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="recources/Remco_Land.jpg" alt="Remco Land">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Over mij<i class="material-icons right">more_vert</i></span>
+      <div class="card-action"><p><a href="youtube.html">YouTube</a><a href=https://www.instagram.com/_remcotjuh_/>Instagram</a></p></div>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Over Mij<i class="material-icons right">close</i></span>
+      <p>Ik ben Remco, ik doe aan Wielrennen bij WVKapenga, en zit nu bij de Nieuwelingen. Veel van mijn wedstrijden film ik en zet ik op YouTube. Hieronder staat een link naar mijn kanaal. Ik doe nu al 6 jaar aan wielrennen en vind het nog steeds heel leuk. Youtube doe ik al 3 jaar maar Wielrenvideo's pas sinds begin 2017. Daarvoor deed ik vooral aan Gamingvideo's. Naast wielrennnen en YouTube vind ik het heel leuk om HTML codes te maken. Deze website heb ik dan ook voor het grootste gedeeldte zelf gescreven. Ik zit op het Liugder en doe daar HAVO niveau. Ik zit nu in klas 3.</p>
+    </div>
+  </div>
 	<div id="Widgets">
       	 <div id="Discord" style="margin-left:20px;">
 			 <iframe src="https://discordapp.com/widget?id=386820363822301186&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 		 </div>
      </div>
+</div>
 <footer>
 	<p>Copyright 2017-2018 CyclingLand</p>
 	<script>

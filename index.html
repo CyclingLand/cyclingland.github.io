@@ -123,12 +123,13 @@
 		<script type="text/javascript" src="js/materialize.js"> </script>
 		<script>
 		$( document ).ready(function(){
-			$('.button-collapse').sideNav({
-					menuWidth: 240, // Default is 240
-    				edge: 'left', // Choose the horizontal origin
-    				closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-			}
-			);
+			$(".button-collapse").sideNav();
+			})
+		</script>
+		<script>
+		$(document).ready(function(){
+			$('.parallax').parallax();
+			});
 		</script>
 <!-- Start SnowScript -->
 	<script type="text/javascript" src="js/snowstorm.js"></script>
@@ -140,7 +141,8 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 
 <!-- End SnowScript-->
 </head>
-	<header>
+	<!-- Navbar -->
+<header>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#!" class="brand-logo"><img src="Logo CyclingLand(transparant).png" style="width:65px;height:auto"></a>
@@ -153,7 +155,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
             </div>
         </nav>
     </div>
-   <!-- Sidenav -->
+   <!-- Move the sidenav outside of .navbar-fixed -->
     <ul class="side-nav" id="mobile-demo">
         <li><a href="#intro">Intro</a></li>
         <li><a href="#about">Over mij</a></li>
@@ -166,7 +168,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 	<div class="main">
 		<div id="Title-div">
 			<picture>
-				<img src="Logo CyclingLand(transparant).png" style="max-width:100%;height:auto;width:500px;" alt="Logo CyclingLand" alt="Logo CyclingLand">
+				<img src="Logo CyclingLand(transparant).png" class="animated fadeInDown" style="max-width:100%;height:auto;width:500px;" alt="Logo CyclingLand" alt="Logo CyclingLand">
 			</picture>
 			<div id="Bottom">
 				<a HREF="#intro" class="btn-floating btn-large waves-effect waves-light blue darken-1"><i class="material-icons left">keyboard_arrow_down</i></a>
@@ -181,7 +183,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 	</div>
 	
 	<div class="parallax-container">
-      <div class="parallax"><img src="recources/Remco_Land.jpg"></div>
+      <div class="parallax"><img src="recources/35424960790_0ccafc701e_b.jpg"></div>
     </div>
         
 	

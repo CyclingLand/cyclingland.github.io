@@ -131,6 +131,14 @@
 			$('.parallax').parallax();
 			});
 		</script>
+		<script>
+		$('a').click(function(){
+    		$('html, body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+			}, 500);
+    		return false;
+			});
+	</script>
 <!-- Start SnowScript -->
 	<script type="text/javascript" src="js/snowstorm.js"></script>
 <script type="text/javascript">
@@ -145,7 +153,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 <header>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#!" class="brand-logo"><img src="Logo CyclingLand(transparant).png" style="width:65px;height:auto"></a>
+            <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#!" class="brand-logo"><img src="Logo CyclingLand(transparant).png" alt="Logo Cyclingland" style="width:65px;height:auto"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#intro">Intro</a></li>
@@ -165,13 +173,13 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 <body>
 
 <!-- Start Splash -->
-	<div class="main">
+	<div class="main" id="top">
 		<div id="Title-div">
 			<picture>
-				<img src="Logo CyclingLand(transparant).png" class="animated fadeInDown" style="max-width:100%;height:auto;width:500px;" alt="Logo CyclingLand" alt="Logo CyclingLand">
+				<img src="Logo CyclingLand(transparant).png" class="animated fadeInDown" style="max-width:100%;height:auto;width:500px;" alt="Logo CyclingLand">
 			</picture>
 			<div id="Bottom">
-				<a HREF="#intro" class="btn-floating btn-large waves-effect waves-light blue darken-1 hoverable"><i class="material-icons left">keyboard_arrow_down</i></a>
+				<a HREF="#intro" class="btn-floating btn-large waves-effect waves-light blue darken-1 hoverable anchorLink"><i class="material-icons left">keyboard_arrow_down</i></a>
 			</div>
 		</div>
 	</div>
@@ -183,7 +191,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 	</div>
 	
 	<div class="parallax-container z-depth-3">
-      <div class="parallax"><img src="recources/bg_par.jpg"></div>
+      <div class="parallax"><img src="recources/bg_par.jpg" alt="background of parallax"></div>
     </div>
         
 	
@@ -193,7 +201,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Over mij<i class="material-icons right">more_vert</i></span>
-      <div class="card-action"><p><a target="_blank" href="youtube.html">YouTube</a><a target="_blank" href=https://www.instagram.com/_remcotjuh_/>Instagram</a></p></div>
+      <div class="card-action"><p><a target="_blank" href="youtube.html">YouTube</a><a target="_blank" href="https://www.instagram.com/_remcotjuh_">Instagram</a></p></div>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Over Mij<i class="material-icons right">close</i></span>
@@ -211,8 +219,6 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
  	<script src="assets/smooth-scroll/smooth-scroll.js"></script>
 </footer>
 <!-- Load last scripts -->
-	<script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-	</script>
+
 </body>
 </html>

@@ -132,6 +132,7 @@
 		<link rel="stylesheet" href="css/animate.min.css">
 	<!-- Smooth scroll -->
 		<script src="https://cyclingland.github.io/dist/js/smooth-scroll.js"></script>
+	<script src="https://cyclingland.github.io/js/smooth_link.js"></script>
 	<!-- Navbar -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"> </script>
@@ -144,47 +145,6 @@
 		$(document).ready(function(){
 			$('.parallax').parallax();
 			});
-		</script>
-
-
-		<script type="text/javascript">
-
-		//<![CDATA[
-
-
-
-				$(function() {
-
-				  $('a[href*=#]:not([href=#])').click(function() {
-
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-
-					  var target = $(this.hash);
-
-					  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-					  if (target.length) {
-
-						$('html,body').animate({
-
-						  scrollTop: target.offset().top
-
-						}, 500);
-
-						return false;
-
-					  }
-
-					}
-
-				  });
-
-				});
-
-
-		//]]>
-
 		</script> 
 <!-- Start SnowScript -->
 	<script type="text/javascript" src="js/snowstorm.js"></script>
@@ -254,7 +214,7 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
   </div>
 	
 	<div class="parallax-container z-depth-3">
-      <div class="parallax"><img src="/recources/bg_par.jpg" alt="background of parallax"></div>
+      <div class="parallax"><img src="recources/bg_par.jpg" alt="background of parallax"></div>
     </div>
         
 	<div id="Widgets">

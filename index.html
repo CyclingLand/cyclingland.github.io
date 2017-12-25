@@ -94,30 +94,18 @@
 			z-index: -1;
 	}
 	.btn:focus{ 
- 			 background-color: #1e88e5 
+ 			background-color: #1e88e5 
 	}
 	.card-small {
   			width: 400px;
 	}
 	.content {
-		background-color: cornflowerblue;
-		text-decoration-color: white;
+			background-color: cornflowerblue;
+			text-decoration-color: white;
 	}
-	.delay-1 {
-		animation-delay: .25s;
-	}
-	.delay-2 {
-		animation-delay: .5s;
-	}
-	.delay-3 {
-		animation-delay: .75s;
-	}
-	.delay-4 {
-		animation-delay: 1s;
-	}
-	.delay-5 {
-		animation-delay: 2s;
-	}
+	.page-footer {
+        	background-color: blue !important;
+    }
   </style>
 	<title>CyclingLand</title>
 	<link rel="shortcut icon" href="https://cyclingland.github.io/favicon_cl.ico" type="image/x-icon">
@@ -217,15 +205,33 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
       <div class="parallax"><img src="recources/bg_par.jpg" alt="background of parallax"></div>
     </div>
         
-	<div id="Widgets">
+	<div class="section white" id="Widgets">
       	 <div id="Discord" style="margin-left:20px;">
 			 <iframe src="https://discordapp.com/widget?id=386820363822301186&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 		 </div>
      </div>
-<footer>
-	<p>Copyright 2017-2018 CyclingLand</p>
- 	<script src="assets/smooth-scroll/smooth-scroll.js"></script>
-</footer>
-<!-- Load last scripts -->
 </body>
+<footer class="page-footer" style="background-color:dodgerblue;">
+   <div class="container">
+     <div class="row">
+       <div class="col l6 s12">
+          <h5 class="white-text">CyclingLand</h5>
+           <p class="grey-text text-lighten-4">Kopieren van elementen is toegestaan, het zou wel gewaardeerd worden als er naar deze pagina gelinkt wordt.</p>
+          </div>
+         <div class="col l4 offset-l2 s12">
+           <h5 class="white-text">Links</h5>
+            <ul>
+               <li><a class="grey-text text-lighten-3" href="youtube.html">YouTube</a></li>
+               <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/cyclingland_/">Instagram</a></li>
+               <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/_remcotjuh_">Instagram (privé)</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+      <div class="footer-copyright">
+         <div class="container">
+          © 2017 CyclingLand
+         </div>
+       </div>
+</footer>
 </html>

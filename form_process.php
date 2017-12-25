@@ -5,9 +5,9 @@ $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $to = "lemoassistant@gmail.com";
-$subject = "Nieuw message from cintact form"
+$subject = "Nieuw message from contact form"
 	
 mail ($to, $subject, $message, "From: " . $first_name . $last_name);
-echo "The message has been sent"
+echo "The message has been sent";
 
 ?>

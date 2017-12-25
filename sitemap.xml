@@ -4,19 +4,21 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 <url>
   <loc>https://cyclingland.github.io/</loc>
-  <lastmod>2017-12-16T09:51:39+00:00</lastmod>
+  <lastmod>2017-12-25T13:13:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://cyclingland.github.io/change_lemo.html</loc>
-  <lastmod>2017-12-16T09:51:39+00:00</lastmod>
+  <loc>https://cyclingland.github.io/youtube.html</loc>
+  <lastmod>2017-12-25T13:13:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://cyclingland.github.io/version_lemo.html</loc>
-  <lastmod>2017-12-16T09:51:39+00:00</lastmod>
+  <loc>https://cyclingland.github.io/404.html</loc>
+  <lastmod>2017-12-25T13:14:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>

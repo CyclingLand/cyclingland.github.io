@@ -104,3 +104,8 @@
 	.page-footer {
         	background-color: blue !important;
     }
+	.footer-navbar {
+			bottom: 0;
+			background-color: dodgerblue;
+			height: 100px;
+	}

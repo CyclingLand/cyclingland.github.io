@@ -104,8 +104,6 @@
 	.page-footer {
         	background-color: blue !important;
     }
-	.footer-navbar {
-			bottom: 0;
-			background-color: dodgerblue;
-			height: 100px;
-	}
+	 .waves-effect.waves-blue .waves-ripple {
+      background-color: rgba(30,144,255,0.65);
+    }

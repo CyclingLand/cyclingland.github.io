@@ -17,22 +17,47 @@
 	<!-- Smooth scroll -->
 		<script src="https://cyclingland.github.io/dist/js/smooth-scroll.js"></script>
 	<script src="https://cyclingland.github.io/js/smooth_link.js"></script>
-			<script>	
-jQuery('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-			var target = jQuery(this.hash);
-			target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				var top_offset = '100';
-				
-				 jQuery('html,body').animate({
-					 scrollTop: target.offset().top - top_offset
-				}, 1000);
-				return false;
-			}
-		}
-	});	
-</script>
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>
+	$(document).ready(function () {
+    //Source: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        }
+                    });
+                }
+            }
+        });
+});</script>
 	<!-- Navbar -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.js"> </script>

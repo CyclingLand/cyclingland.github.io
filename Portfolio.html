@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link href="css/cyclingland.css" rel="stylesheet" type="text/css">
+<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+	<!-- Navbar -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.js"> </script>
+		<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+			})
+		</script>
+	<!-- Smooth scroll -->
+		<script src="https://cyclingland.github.io/dist/js/smooth-scroll.js"></script>
+		<script src="https://cyclingland.github.io/js/smooth_link.js"></script>
+	<!-- Import Google Icon Font -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Import Slider -->	
+		<script>
+	    $(document).ready(function(){
+			$('.slider').slider();
+    		});
+		</script>
+	<!-- Import Modals -->
+		<script>
+	  $(document).ready(function(){
+		  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+		  $('.modal').modal();
+  		  });
+    
+		</script>
+</head>
+<header>
+    <div class="navbar-fixed" id="top">
+        <nav>
+            <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#top" class="brand-logo "><img src="Logo CyclingLand(transparant).png" alt="Logo Cyclingland" style="width:65px;height:auto"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light" href="index.html#intro">Intro</a></li>
+          			<li><a class="waves-effect waves-light" href="index.html#about">Over mij</a></li>
+         			<li><a class="waves-effect waves-light" href="youtube.html">YouTube</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+   <!-- Move the sidenav outside of .navbar-fixed -->
+    <ul class="side-nav" id="mobile-demo">
+    <li><div class="user-view z-depth-4" style="height: 130px">
+      <div class="background">
+        <img src="recources/bg_par.jpg" style="width: 100%;">
+      </div>
+		<img class="circle z-depth-4" src="Logo CyclingLand.jpg">
+    </div></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">Over mij</a></li>
+        <li><a href="youtube.html">YouTube</a></li>
+    </ul>
+</header>
+<body>
+	<div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="Achtergrond.jpg">
+        <div class="caption center-align">
+          <h3>Welcome to my portfolio</h3>
+          <h5 class="light grey-text text-lighten-3">Let's get started</h5>
+        </div>
+      </li>
+      <li>
+        <img src="recources/portfolio/Portfolio_mos.jpg">
+        <div class="caption left-align">
+          <h3>Website MOS</h3>
+          <h5 class="light grey-text text-lighten-3">I made a redesign of the website of the voluntary organization MOS.</h5>
+			<a href="https://cyclingland.github.io/mosweb/" class="waves-effect waves-light btn">Learn more</a>
+        </div>
+      </li>
+      <li>
+        <img src="recources/portfolio/Portfolio_intro1.jpg">
+        <div class="caption right-align">
+          <h3>Intro 'IkBenRoy'</h3>
+          <h5 class="light grey-text text-lighten-3">I made this intro for the Dutch YouTube channel IkBenRoy</h5>
+			<a href="#intro" data-target="intro" class="btn modal-trigger">Watch</a>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+	  <div id="intro" class="modal">
+    <div class="modal-content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ili-i62ZuRA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

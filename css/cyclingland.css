@@ -114,3 +114,7 @@
 	width: 100%;
 	height: 100%;
 }
+.btn-nav {
+	padding-right: 5% !important;
+	padding-left: 5% !important;
+}

@@ -43,7 +43,7 @@
     <div class="navbar-fixed" id="top">
         <nav>
             <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#top" class="brand-logo center"><img src="Logo CyclingLand(transparant).png" alt="Logo Cyclingland" style="width:65px;height:auto"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
 				<ul class="right">
                     <li><a class="waves-effect waves-light modal-trigger" href="#help" ><i class="material-icons">help_outline</i></a></li>
                 </ul>
@@ -93,8 +93,8 @@
         <div class="caption left-align">
           <h3>Website MOS</h3>
           <h5 class="light grey-text text-lighten-3">I made a redesign of the website of the voluntary organization MOS.</h5>
-			<a href="#mos" data-target="mos" class="btn modal-trigger hoverable">Learn more</a>
-			<a id="next2" class="btn-floating btn-large waves-effect waves-light blue darken-1 hoverable"><i class="material-icons">arrow_forward</i></a>
+			<a style="background-color: chocolate" href="#mos" data-target="mos" class="btn waves-effect waves-light modal-trigger hoverable">Learn more</a><br>
+			<a style="margin-top: 20px;background-color: chocolate" id="next2" class="btn-floating btn-large waves-effect waves-light hoverable"><i class="material-icons">arrow_forward</i></a>
         </div>
       </li>
       <li>
@@ -102,8 +102,8 @@
         <div class="caption right-align">
           <h3>Intro 'IkBenRoy'</h3>
           <h5 class="light grey-text text-lighten-3">I made this intro for the Dutch YouTube channel IkBenRoy</h5>
-			<a href="#intro" data-target="intro" class="btn modal-trigger hoverable">Watch</a>
-			<a id="next3" class="btn-floating btn-large waves-effect waves-light blue darken-1 hoverable"><i class="material-icons">arrow_forward</i></a>
+			<a href="#intro" style="background-color: darkslategray" data-target="intro" class="btn waves-effect waves-light modal-trigger hoverable">Watch</a><br>
+			<a id="next3" style="margin-top: 20px;background-color: darkslategray" class="btn-floating btn-large waves-effect waves-light hoverable"><i class="material-icons">arrow_forward</i></a>
         </div>
       </li>
       <li>
@@ -116,19 +116,30 @@
       </li>
     </ul>
   </div>
-	  <div id="intro" class="modal">
+	  <div id="intro" class="modal modal-footer">
     <div class="modal-content">
 	<div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Ili-i62ZuRA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+	<div class="modal-footer"><a class="btn-flat" href="intro.html">More intros</a></div>
 	</div>
 	</div>
 	<div id="mos" class="modal modal-footer">
     <div class="modal-content">
 	<div class="container">
-		<p>I made this redesign of the webiste for <a target="_blank" href="http://mosweb.nl/">MOS</a></p>	
+		<p>I made this redesign of the webiste for <a target="_blank" href="http://mosweb.nl/">MOS.</a><br>At first the website had a really outdated design, with no mobile version. At this time a mobile version is a must have since almost 50% of web traffic is mobile. So if you don't have a mobile version of your website you'll probaly miss a lot of visitors</p>	
 	</div>
-	<div class="modal-footer"><a class="btn-flat" href="http://mosweb.nl/">Original Website</a></div>
+	<div class="modal-footer"><a class="btn-flat" href="http://mosweb.nl/">Original Website</a><a class="btn-flat" href="http://cyclingland.github.io/mosweb">Redesign</a></div>
+	</div>
+	</div>
+	<div id="help" class="modal modal-footer">
+    <div class="modal-content">
+	<div class="container">
+		<h2>Welcome to my portfolio!</h2>
+		<p>I made this portfolio so I can show people who are in need of a design what my style is and what they can expect.</p>
+		<h3>How does it work?</h3>
+		<p>As you can see, there is a slider. Just click on the arrow button to go to the next slide. If there is a button under the description you can click it to view more.<br>You can click on the menu button (at the top-left) to view a list of all projects</p>
+	</div>
 	</div>
 	</div>
 </body>

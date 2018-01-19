@@ -105,16 +105,20 @@
         	background-color: blue !important;
     }
 	 .waves-effect.waves-blue .waves-ripple {
-      background-color: rgba(30,144,255,0.65);
+      		background-color: rgba(30,144,255,0.65);
     }
 	.modal-content iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.btn-nav {
-	padding-right: 5% !important;
-	padding-left: 5% !important;
-}
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+	}
+	.btn-nav {
+			padding-right: 5% !important;
+			padding-left: 5% !important;
+	}
+
+	.cover-img {
+			background-size: cover;
+	}

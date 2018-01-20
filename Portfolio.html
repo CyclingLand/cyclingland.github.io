@@ -38,6 +38,12 @@
   		  });
     
 		</script>
+	<!-- Import Material box (img) -->
+		<script>
+		  $(document).ready(function(){
+    		$('.materialboxed').materialbox();
+		  });
+		</script>
 </head>
 <header>
     <div class="navbar-fixed" id="top">
@@ -91,8 +97,8 @@
           <h5 class="animated jackInTheBox delay-5 light grey-text text-lighten-3">Let's get started</h5>
 			<a id="next" class="pulse animated jackInTheBox delay-5 btn-floating btn-large waves-effect waves-light blue darken-1 hoverable"><i class="material-icons">arrow_forward</i></a>
 		  <p class="hide-on-med-and-up animated infinite pulse">You can also swipe!</p>
-		
-        </div>
+			<div class="animated fadeIn"><a style="margin-top: 20%" class="btn-large blue darken-1 waves-effect">Get a design</a></div>        
+		  </div>
       </li>
       <li>
         <img style="filter: blur(3px);" class="hide-on-small-only cover-img" src="recources/portfolio/Portfolio_mos.jpg">
@@ -118,7 +124,8 @@
         <div class="caption center-align">
           <h3>VlogBattle Breda</h3>
           <h5 class="light grey-text text-lighten-3">I made (almost) all of the designs for the Vlogbattle at Breda (The Netherlands)</h5>
-			<a id="next4" class="btn-floating btn-large waves-effect waves-light red darken-2 hoverable"><i class="material-icons">arrow_forward</i></a>
+			<a href="#vlog" style="background-color: #d32f2f" data-target="vlog" class="btn waves-effect waves-light modal-trigger hoverable">Learn More</a><br>
+			<a id="next4" style="margin-top: 20px" class="btn-floating btn-large waves-effect waves-light red darken-2 hoverable"><i class="material-icons">arrow_forward</i></a>
         </div>
       </li>
 	  <li>
@@ -146,6 +153,23 @@
 	</div>
 	<div class="modal-footer"><a class="btn-flat" target="_blank" href="http://mosweb.nl/">Original Website</a><a target="_blank" class="btn-flat amber lighten-2" href="http://cyclingland.github.io/mosweb">Redesign</a></div>
 	</div>
+	</div>
+	<div id="vlog" class="modal modal-footer">
+    <center><div class="modal-content">
+	<div class="container" style="text-align: left;margin: 10px">
+		<img class="responsive-img" alt="Logo Vlogbattle" src="https://www.vlogbattlebreda.nl/wp-content/uploads/2017/12/cropped-cropped-favicon.png">
+		<h2>VlogBattle Breda</h2>
+		<p>I made almost all of the designs for the VlogBattle at Breda (The Netherlands)
+  			<h5>The Lineup image (used on insta)</h5>
+			<img class="responsive-img materialboxed" style="max-width: 50%" src="recources/portfolio/Portfolio_image_lineup.jpg">
+  			<h5>Header images (seen on <a target="_blank" href="http://www.vlogbattlebreda.nl/">the website</a>)</h5>
+  			<h5>milk</h5>
+  			<h5>butter</h5>
+		</p>
+		<h3>How does it work?</h3>
+		<p>As you can see, there is a slider. Just click on the arrow button to go to the next slide. If there is a button under the description you can click it to view more.<br>You can click on the menu button (at the top-left) to view a list of all projects</p>
+	</div>
+	</div></center>
 	</div>
 	<div id="help" class="modal modal-footer">
     <div class="modal-content">

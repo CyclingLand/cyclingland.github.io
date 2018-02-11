@@ -7,6 +7,7 @@
 .pf_logo {
 	width: 30%;
 	height: auto;
+	margin-top: 20px;
 }
 
 .side-img {
@@ -48,14 +49,17 @@
 	/* Sections */
 #section1 {
    	min-height: 450px;
-    background-color: #021143;
-	background: -webkit-linear-gradient(#cd1719, #ff080b);
-	background: -o-linear-gradient(#cd1719, #ff080b);
-	background: linear-gradient(#cd1719, #ff080b);
+    background-color: #fdd835;
+	background: -webkit-linear-gradient(#fdd835, #f9a825);
+	background: -o-linear-gradient(#fdd835, #f9a825);
+	background: linear-gradient(#fdd835, #f9a825);
 }
 #section2 {
    	min-height: 450px;
-    background-color: #16192a;
+    background-color: #b71c1c;
+	background: -webkit-linear-gradient(#ef5350, #b71c1c);
+	background: -o-linear-gradient(#ef5350, #b71c1c);
+	background: linear-gradient(#ef5350, #b71c1c);
 }
 /*@Media*/
 

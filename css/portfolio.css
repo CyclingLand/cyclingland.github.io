@@ -1,9 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-.navbar {
-  	background-color: #333;
-  	position: fixed;
-}
 .pf_logo {
 	width: 30%;
 	height: auto;
@@ -26,6 +22,7 @@
 
 .btn-round {
 	border-radius: 30px !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .text {
 	float: left;

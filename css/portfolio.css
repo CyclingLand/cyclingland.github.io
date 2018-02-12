@@ -65,6 +65,13 @@
 	background: -o-linear-gradient(#d2691e, #b71c1c);
 	background: linear-gradient(#d2691e, #b71c1c);
 }
+#section4 {
+   	min-height: 450px;
+    background-color: #0088ff;
+	background: -webkit-linear-gradient(#0088ff, #136bb9);
+	background: -o-linear-gradient(#0088ff, #136bb9);
+	background: linear-gradient(#0088ff, #136bb9);
+}
 /*@Media*/
 
 @media (min-width: 768px) {

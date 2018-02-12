@@ -54,9 +54,9 @@
 #section2 {
    	min-height: 450px;
     background-color: #b71c1c;
-	background: -webkit-linear-gradient(#ef5350, #b71c1c);
-	background: -o-linear-gradient(#ef5350, #b71c1c);
-	background: linear-gradient(#ef5350, #b71c1c);
+	background: -webkit-linear-gradient(#d93e3c, #b71c1c);
+	background: -o-linear-gradient(#d93e3c, #b71c1c);
+	background: linear-gradient(#d93e3c, #b71c1c);
 }
 #section3 {
    	min-height: 450px;

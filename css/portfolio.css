@@ -49,10 +49,10 @@
 }
 #intro-start {
    	min-height: 200px;
-    background-color: #3c7bd9;
-	background: -webkit-linear-gradient(30deg, #620a85, #3c7bd9);
-	background: -o-linear-gradient(30deg, #620a85, #3c7bd9);
-	background: linear-gradient(30deg, #620a85, #3c7bd9);
+    background-color: #1351ac;
+	background: -webkit-linear-gradient(30deg, #620a85, #1351ac);
+	background: -o-linear-gradient(30deg, #620a85, #1351ac);
+	background: linear-gradient(30deg, #620a85, #1351ac;
 }
 .carbon {
 	background:

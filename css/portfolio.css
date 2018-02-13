@@ -47,13 +47,6 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-#intro-start {
-   	min-height: 200px;
-    background-color: #1351ac;
-	background: -webkit-linear-gradient(30deg, #1351ac, #620a85);
-	background: -o-linear-gradient(30deg, #1351ac, #620a85);
-	background: linear-gradient(30deg, #1351ac, #620a85;
-}
 .carbon {
 	background:
 	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -94,6 +87,13 @@
 	background: -webkit-linear-gradient(#0088ff, #136bb9);
 	background: -o-linear-gradient(#0088ff, #136bb9);
 	background: linear-gradient(#0088ff, #136bb9);
+}
+#intro-start {
+   	min-height: 200px;
+    background-color: #1351ac;
+	background: -webkit-linear-gradient(30deg, #1351ac, #620a85);
+	background: -o-linear-gradient(30deg, #1351ac, #620a85);
+	background: linear-gradient(30deg, #1351ac, #620a85;)
 }
 /*@Media*/
 

@@ -64,6 +64,7 @@
 }
 	/* Sections */
 #section1 {
+	margin-top: 75px;
    	min-height: 450px;
     background-color: #fdd835;
 	background: -webkit-linear-gradient(45deg, #e4c330, #c3a729);
@@ -105,4 +106,7 @@
 	.side-img {
 	max-width: 50%;
 }
+}
+.title {
+	padding-top: 75px;
 }

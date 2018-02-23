@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+	height: 100%
+}
 .navbar {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -31,7 +34,8 @@
 	float: left;
 }
 .introduction {
-	color: white
+	color: white;
+	margin-top: 7%;
 }
 .videoWrapper {
 	position: relative;
@@ -49,6 +53,9 @@
 #intros {
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+.title {
+	padding-top: 75px;
 }
 .carbon {
 	background:
@@ -99,14 +106,54 @@
 	background: -o-linear-gradient(30deg, #1351ac, #620a85);
 	background: linear-gradient(30deg, #1351ac, #620a85);
 }
+.vlogbattle-start {
+    background-color: #fdd835;
+	background: -webkit-linear-gradient(45deg, #e4c330, #c3a729);
+	background: -o-linear-gradient(45deg, #e4c330, #c3a729);
+	background: linear-gradient(45deg, #e4c330, #c3a729);
+	position: absolute;
+	top: -75px;
+	left: 0px;
+	right: 0px;
+	height: 800px;
+	color: white;
+	-ms-transform: skewY(5deg);
+	-webkit-transform: skewY(5deg);
+	transform: skewY(5deg);
+}
+.unscew {
+	-ms-transform: skewY(-5deg);
+	-webkit-transform: skewY(-5deg);
+	transform: skewY(-5deg);
+}
+#vlog-section {
+	padding-top: 500px;
+}
 /*@Media*/
 
+/*Tablet and up*/
 @media (min-width: 768px) {
 	
-	.side-img {
+.side-img {
 	max-width: 50%;
 }
+} /*Tablet and up*/
+
+/*Custom1*/
+@media (min-width: 576) {
+.vlogbattle-start {
+    background-color: #fdd835;
+	background: -webkit-linear-gradient(45deg, #e4c330, #c3a729);
+	background: -o-linear-gradient(45deg, #e4c330, #c3a729);
+	background: linear-gradient(45deg, #e4c330, #c3a729);
+	position: absolute;
+	top: -75px;
+	left: 0px;
+	right: 0px;
+	height: 500px;
+	color: white;
+	-ms-transform: skewY(5deg);
+	-webkit-transform: skewY(5deg);
+	transform: skewY(5deg);
 }
-.title {
-	padding-top: 75px;
-}
+} /*Custom1*/

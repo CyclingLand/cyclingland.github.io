@@ -195,8 +195,8 @@ blockquote em{
 } /*End Tablet and up*/
 
 /*Custom1*/
-@media (min-width: 576) {
+@media (max-width: 576) {
 #vlog-section {
-	padding-top: 1400px;
+	margin-top: 1400px;
 }
 } /*End Custom1*/

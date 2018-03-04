@@ -1,5 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*Fonts*/
+@font-face {
+    font-family: Cartoonist;
+    src: url("../fonts/cartoonist/cartoonist_kooky.ttf");
+}
+/*Einde Fonts*/
 body {
 	height: 100%
 }
@@ -23,7 +30,8 @@ body {
 	margin-bottom: 30px;
 }
 .title {
-	color: white
+	color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
 .btn-round {

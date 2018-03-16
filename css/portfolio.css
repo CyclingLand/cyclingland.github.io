@@ -7,9 +7,6 @@
     src: url("../fonts/cartoonist/cartoonist_kooky.ttf");
 }
 /*Einde Fonts*/
-body {
-	height: 100%
-}
 .navbar {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -189,13 +186,13 @@ blockquote em{
 	-webkit-transform: skewY(-5deg);
 	transform: skewY(-5deg);
 }
-#vlog-section {
-	padding-top: 700px;
+.vlog-section {
+	padding-top: 1400px;
 }
 /*@Media*/
 
 /*Tablet and up*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	
 .side-img {
 	max-width: 50%;
@@ -203,8 +200,11 @@ blockquote em{
 } /*End Tablet and up*/
 
 /*Custom1*/
-@media (max-width: 576) {
-#vlog-section {
-	margin-top: 1400px;
+@media screen and (min-width: 800px) {
+    .vlog-section {
+        padding-top: 800px;
+    }
 }
 } /*End Custom1*/
+
+

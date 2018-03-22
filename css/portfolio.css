@@ -176,7 +176,7 @@ blockquote em{
 	top: -75px;
 	left: 0px;
 	right: 0px;
-	height: auto;
+	height: 700;
 	-ms-transform: skewY(5deg);
 	-webkit-transform: skewY(5deg);
 	transform: skewY(5deg);
@@ -187,7 +187,7 @@ blockquote em{
 	transform: skewY(-5deg);
 }
 .vlog-section {
-	padding-top: 1400px;
+	padding-top: 700px;
 }
 /*@Media*/
 
@@ -199,12 +199,11 @@ blockquote em{
 }
 } /*End Tablet and up*/
 
-/*Custom1*/
-@media screen and (min-width: 800px) {
-    .vlog-section {
-        padding-top: 800px;
-    }
+/*Tot 715px*/
+@media screen and (max-width: 575px) {
+	.vlog-section {
+		padding-top: 1100px;
+	}
 }
-} /*End Custom1*/
 
 

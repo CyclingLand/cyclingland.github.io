@@ -199,7 +199,7 @@ blockquote em{
 }
 } /*End Tablet and up*/
 
-/*Tot 715px*/
+/*Mobile*/
 @media screen and (max-width: 575px) {
 	.vlog-section {
 		padding-top: 1100px;

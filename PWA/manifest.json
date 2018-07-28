@@ -1,0 +1,21 @@
+{
+    "dir": "ltr",
+    "lang": "da",
+    "name": "Land Designs",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://cyclingland.github.io/",
+    "short_name": "Land Designs",
+    "theme_color": "#FFFFFF",
+    "description": "All projects made by Remco Land, change log of Lemo Assistant, HTML tests and more",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "64x64 32x32 16x16"
+        }
+    ]
+}

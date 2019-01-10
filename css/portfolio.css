@@ -217,3 +217,10 @@ blockquote em{
 .portfolio-item {
 	margin-bottom: 10px;
 }
+
+#section5 {
+	min-height: 450px;
+	background: -webkit-linear-gradient(-150deg, #db007d, #9643a6);
+	background: -o-linear-gradient(-150deg, #db007d, #9643a6);
+	background: linear-gradient(-150deg, #db007d, #9643a6);
+}

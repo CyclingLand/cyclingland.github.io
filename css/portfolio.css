@@ -224,3 +224,10 @@ blockquote em{
 	background: -o-linear-gradient(-150deg, #db007d, #9643a6);
 	background: linear-gradient(-150deg, #db007d, #9643a6);
 }
+
+.top-nav {
+	padding-top: 50px !important;
+}
+.top-nav p {
+	margin-right: 10px
+}

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>New Tab</title>
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="css/newtab.css" rel="stylesheet">
 	    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,14 @@
             integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()" id="body">
 	
 
 	
 <div class="content">
 
 <div class="container" style="padding-top: 50px">
-	<center><h1 id="date" class="display-4"></h1></center>
+	<center><h1 id="date"></h1></center>
 	
 	<form action="https://www.google.com/search" method="get" class="google">
       <input type="text" name="q" class="searchbox shadow" placeholder="Search Google">
@@ -74,6 +74,7 @@
 	  <center><a href="chrome://bookmarks/" id="bookmarks" target="_blank"><button type="button" class="btn btn-primary">All bookmarks</button></a></center> 
 
   </div>
+	</center>	
 	
 <a class="weatherwidget-io shadow" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a>
 <script>
@@ -112,10 +113,64 @@ function myFunction() {
   var w = weekday[d.getDay()];
   var n = month[d.getDay()];
   document.getElementById("date").innerHTML = w + ' &#124; ' + m +'&nbsp;' + n ;
+
 }
+	
 </script>
-</center>	
+<!-- Settings -->
+	
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Settings</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+	<!--<form id="form" onsubmit="return false;">
+	    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+	    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+	</form>-->
+        <!-- Form -->
+<div class="container">		
+        <form class="md-form" style="color: #757575;">
+
+            <div>
+                <p>Customize the new tab page to your likings</p>
+            </div>
+
+
+            <label for="input">Custom background image</label>
+            <input type="text" id="bg-image" class="form-control" placeholder="http://example.com/image.jpg">
+            <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Dark theme</label>
+            </div>
+            <input class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" onclick="image()">
+
+        </form>
 </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="" class="btn btn-light btn-rounded fixed-bottom" data-toggle="modal" data-target="#modalLoginForm" id="settings-button"><i class="fas fa-paint-brush"></i> Customize</a>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- set custom background -->	
+<script>
+function image()
+{
+var image = document.getElementById("bg-image").value;
+$("#body").css('background-image', 'url('+ image +')');	
+</script>	
 </div>
 </body>
 </html>

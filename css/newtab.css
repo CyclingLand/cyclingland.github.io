@@ -20,7 +20,7 @@ html, body {
 		transform: rotate(-90deg);
 }
 	.content {	
-	height: 100%;
+	min-height: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -31,19 +31,26 @@ html, body {
 		background: url(../recources/love/Screenshot_20190228-192315_Darker.jpg) 0 0 no-repeat ;
 		background-size: cover;
 	    background-position: center;
-		height: 100%;
+		min-height: 100%;
 	}
 }
 
 
-.row {
-	background-color: #CCCCCC;
+.apps {
+	background-color: rgba(255,255,255,0.50);
 	padding-top: 20px;
 	margin-top: 120px;
 	border-radius: 8px;
 	max-width: 90%;
 }
 
+.weatherwidget-io{
+	background-color: rgba(255,255,255,0.50);
+	padding-top: 20px;
+	margin-top: 70px;
+	border-radius: 8px;
+	max-width: 90%;
+}
 .logo-link {
 	width: 70%;
 	height: auto;
@@ -70,8 +77,7 @@ html, body {
 
 /* Search bar */
 form {
-	width: 800px;
-	max-width: 80%;
+	width: 100%
 }
 
 
@@ -82,7 +88,7 @@ form.google input[type=text] {
   width: 80%;
   background: #f1f1f1;
   border:none;
-  border-radius: 15px 0 0 15px; /*In order: top-left, top-right, bottom-right, bottom-left*/
+  border-radius: 8px 0 0 8px; /*In order: top-left, top-right, bottom-right, bottom-left*/
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /*Material-esque box shadow*/
 }
 form.google button {
@@ -93,7 +99,7 @@ form.google button {
   color: white;
   font-size: 17px;
   border: none;
-  border-radius: 0 15px 15px 0; /*In order: top-left, top-right, bottom-right, bottom-left*/
+  border-radius: 0 8px 8px 0; /*In order: top-left, top-right, bottom-right, bottom-left*/
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }

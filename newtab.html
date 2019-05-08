@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>New Tab</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
 	<link href="css/newtab.css" rel="stylesheet">
 	    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +28,8 @@
     </form>
 	
 <center>
-  <div class="row apps">
+<div class="apps">
+  <div class="row">
     <div class="col">
 			<div class="image-wrapper">
       			<a href="http://www.youtube.com"><img class="logo-link align-middle"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube"/></a>
@@ -67,6 +69,16 @@
 		
 		<h6 class="align-bottom">Land Designs</h6>
     </div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('bookmarks').addEventListener('click', function() {
+        chrome.tabs.update({ url: 'http://chrome://bookmarks/' });
+    });
+});
+	</script>
+	  <center><a href="#" id="bookmarks"><button type="button" class="btn btn-primary">All bookmarks</button></a></center> 
+
   </div>
 	
 <a class="weatherwidget-io" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a>

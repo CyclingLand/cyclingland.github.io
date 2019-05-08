@@ -12,16 +12,17 @@
             integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
-<body>
+<body onload="myFunction()">
 	
 
 	
 <div class="content">
 
 <div class="container" style="padding-top: 50px">
+	<center><h1 id="date" class="display-4"></h1></center>
 	
 	<form action="https://www.google.com/search" method="get" class="google">
-      <input type="text" name="q" class="searchbox" placeholder="Search Google...">
+      <input type="text" name="q" class="searchbox" placeholder="Search Google">
       <button type="submit">
         <i class="fa fa-search"></i>
       </button>
@@ -79,6 +80,40 @@
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 
+<!-- date script -->
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var m = d.getDate();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var month = new Array(11);
+  month[0] = "Jan";
+  month[1] = "Feb";
+  month[2] = "Mar";
+  month[3] = "Apr";
+  month[4] = "May";
+  month[5] = "Jun";
+  month[6] = "Jul";
+  month[7] = "Aug";
+  month[8] = "Sep";
+  month[9] = "Oct";
+  month[10] = "Nov";
+  month[11] = "Dec";
+  
+  var w = weekday[d.getDay()];
+  var n = month[d.getDay()];
+  document.getElementById("date").innerHTML = w + ' &#124; ' + m +'&nbsp;' + n ;
+}
+</script>
 </center>	
 </div>
 </div>

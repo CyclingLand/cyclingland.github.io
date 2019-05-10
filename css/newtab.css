@@ -30,15 +30,13 @@ html, body {
 .apps {
 	background-color: rgba(255,255,255,0.80);
 	padding-top: 20px;
-	margin-top: 120px;
-	border-radius: 8px;
-	max-width: 90%;
+	margin-top: 170px;
+	border-radius: 8px;max-width: 90%;
 }
 
 .weatherwidget-io{
 	background-color: rgba(255,255,255,0.80);
-	padding-top: 20px;
-	margin-top: 70px;
+	margin-top: 70px !important;
 	border-radius: 8px;
 	max-width: 90%;
 }
@@ -74,8 +72,7 @@ h1 {
 	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #settings-button {
-	position: absolute;
-	float: right
+	
 }
 /* Search bar */
 form {
@@ -124,4 +121,12 @@ form.google::after {
 @media only screen and (max-width:600px) {
   body {margin: 0.9em;}
   form.google {width: 100%;}
+}
+
+.label {
+	padding-top: 10px
+}
+
+.content {
+	
 }

@@ -158,6 +158,9 @@ blockquote em{
         border: 1px solid #eee !important;
         padding: 1em !important;
     }
+gcse:searchbox-only {
+	min-width: 500px !important;
+}
 /* Timeline */
 
 /* @media tags */

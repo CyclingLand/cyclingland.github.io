@@ -1,65 +1,66 @@
 <html>
 <head>
-	<title>CyclingLand</title>
-	<meta name="keywords" content="Lemo, Personal Assistant, Change Log, Android">
-	<meta name="description" content="All projects made by Remco Land, change log of Lemo Assistant, HTML tests and more">
+	<title>Land Designs</title>
+	<meta name="keywords" content="Remco Land">
+	<meta name="description" content="Looking for a new design for your website, a new trailer for your YouTube channel, or an instagram post design? Request your design now on Land Designs">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	<!-- Import my own Stylesheet -->
-		<link href="css/cyclingland.css" rel="stylesheet">
-	<!-- Import Loader -->
-		<link href="css/loader.css" rel="stylesheet">
-	<!-- Import Google Icon Font -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- Import materialize.css -->
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<!-- Import Animations -->
-		<link rel="stylesheet" href="css/animate.min.css">
-	<!-- Smooth scroll -->
-		<script src="https://cyclingland.github.io/dist/js/smooth-scroll.js"></script>
-	<script src="https://cyclingland.github.io/js/smooth_link.js"></script>
-	<!-- Navbar -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.js"> </script>
-		<script>
-		$( document ).ready(function(){
-			$(".button-collapse").sideNav();
-			})
-		</script>
-		<script>
-		$(document).ready(function(){
-			$('.parallax').parallax();
-			});
-		</script> 
-<!-- Start SnowScript -->
-	<script type="text/javascript" src="js/snowstorm.js"></script>
-<script type="text/javascript">
-snowStorm.snowColor = '#FFFFFF'; // blue-ish snow!?
-snowStorm.flakesMaxActive = 96;  // show more snow on screen at once
-snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
-</script>
+	<meta name="theme-color" content="#FFFFFF" />	<!-- Import my own Stylesheet -->
+	<link href="css/cyclingland.css" rel="stylesheet">
+	<link href="css/land-designs.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
-<!-- End SnowScript-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-	<!-- Navbar -->
 <header>
-    <div class="navbar-fixed" id="top">
-        <nav>
-            <div class="nav-wrapper" style="background-color:dodgerblue;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> <a href="#top" class="brand-logo center"><img src="Logo CyclingLand(transparant).png" alt="Logo Cyclingland" style="width:65px;height:auto"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="waves-effect waves-light" href="#intro">Intro</a></li>
-          			<li><a class="waves-effect waves-light" href="#about">Over mij</a></li>
-         			<li><a class="waves-effect waves-light" href="youtube.html">YouTube</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-   <!-- Move the sidenav outside of .navbar-fixed -->
-    <ul class="side-nav" id="mobile-demo">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#about">Over mij</a></li>
-        <li><a href="youtube.html">YouTube</a></li>
-    </ul>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+        <img src="Logo_Vierkant.png" width="55" height="55" alt="Logo">
+      </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto ">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Portfolio
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="portfolio.html">Overview</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="/portfolio/intro.html">Intros &amp; Outros</a>
+			  <a class="dropdown-item" href="/portfolio/graphics.html">Banners &amp; Avatars</a>
+			  <a class="dropdown-item" href="/portfolio/thumbnail.html">Thumbnails</a>
+				<a class="dropdown-item" href="/portfolio/trailer.html">Trailers</a>
+				<a class="dropdown-item" href="/portfolio/social.html">Social Posts</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="/portfolio/vlogbattle.html">Vlogbattle Breda</a>
+			  <a class="dropdown-item" href="mosweb">MOS</a>
+			</div>
+		  </li>
+			<!-- Google Search -->	
+			<script>
+  (function() {
+    var cx = '004084777620002307613:qznm5a3yrli';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="search"></gcse:searchbox-only>
+		</ul>
+	  </div>
+	</nav>
 </header>
 <body>
 <?php

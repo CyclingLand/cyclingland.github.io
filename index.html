@@ -13,6 +13,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -49,7 +50,7 @@
 		  </li>
 		</ul>
 			<!-- Google Search -->	
-			<script>
+<!--			<script>
   (function() {
     var cx = '004084777620002307613:qznm5a3yrli';
     var gcse = document.createElement('script');
@@ -59,9 +60,13 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script>
-<gcse:searchbox-only resultsUrl="search" class="searchbar"></gcse:searchbox-only>
-
+</script>-->
+<div class="search">
+<input type="text" class="form-control searchbar" placeholder="Search for projects, articles and more" name="search" id="search" autocomplete="off">
+<button type="submit" class="searchbtn" onclick="location.href='\search?q='+ document.getElementById('search').value"> <i class="material-icons">
+search
+</i></button>
+</div>	
 	  </div>
 	</nav>
 </header>

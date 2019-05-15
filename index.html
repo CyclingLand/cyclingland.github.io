@@ -61,8 +61,8 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>-->
-<form class="search">
-<input type="text" class="form-control searchbar" placeholder="Search for projects, articles and more" name="search" id="search" autocomplete="off">
+<form class="search" action="https://www.google.com/search" method="get">
+<input type="text" class="form-control searchbar" placeholder="Search for projects, articles and more" name="q" id="search" autocomplete="off">
 <button type="submit" class="searchbtn" onclick="location.href='\search?q='+ document.getElementById('search').value"> <i class="material-icons">
 search
 </i></button>

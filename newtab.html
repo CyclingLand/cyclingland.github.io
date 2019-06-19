@@ -12,7 +12,7 @@
             integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
-<body onload="myFunction()" id="body">
+<body onload="myFunction()" id="body" class="body">
 	
 
 	
@@ -86,7 +86,13 @@
   </div>
 	
 	
-<a class="weatherwidget-io shadow" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a></center>
+<a class="weatherwidget-io shadows" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a>
+
+<div class="shadows calendar-div">
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FAmsterdam&amp;src=cmVtY29sYW5kNTlAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c3RkZGVmamYxMTRxbHJzbDY0cGtvZnRpbXZxMGNtZDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmwuZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23E4C441&amp;color=%23EF6C00&amp;color=%23D50000&amp;color=%23009688&amp;showTabs=1&amp;showTz=0&amp;showCalendars=1&amp;showPrint=0&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="embed-responsive-item calendar"></iframe>
+</div>
+	
+</center>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
@@ -127,6 +133,14 @@ function myFunction() {
 }
 	
 </script>
+	
+	<!-- Background -->
+<script type="text/javascript">
+
+  var images = ['recources/love/Screenshot_20190228-192315_Darker-vertical.jpg', 'recources/love/Snapchat-1482784434.jpg', 'recources/love/Snapchat_20190212.jpg'];
+  document.getElementsByClassName('body')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+
+</script>	
 <!-- Settings -->
 	
 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"

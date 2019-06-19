@@ -6,18 +6,21 @@
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="css/newtab.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
 	    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" 
             integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body onload="myFunction()" id="body" class="body">
-	
+<body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
+<div class="mask rgba-black-strong" id="content" style="opacity: 0">	
+<div id="filler" style="min-height: 100%;">&nbsp;</div>
 
 	
 <div class="content">
-
+	<div class="">
 <div class="container" style="padding-top: 50px">
 	<center><h1 id="date"></h1></center>
 	
@@ -77,6 +80,30 @@
 		</div>		
 		
 		<h6 class="align-bottom label">Land Designs</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="http://fancammo.nl/"><img class="logo-link align-middle" src="recources/newtab/Fancammo_logo.png" alt="Fancammo"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Fancammo</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://csgliudger-my.sharepoint.com/personal/156920_csgliudger_nl/_layouts/15/onedrive.aspx"><img class="logo-link align-middle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Office_OneDrive_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_OneDrive_%282018%E2%80%93present%29.svg.png" alt="OneDrive"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">OneDrive</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://calendar.google.com"><img class="logo-link align-middle" src="https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw" alt="Google Calendar"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Calendar</h6>
     </div> 
 	
 	</div>
@@ -137,10 +164,31 @@ function myFunction() {
 	<!-- Background -->
 <script type="text/javascript">
 
-  var images = ['recources/love/Screenshot_20190228-192315_Darker-vertical.jpg', 'recources/love/Snapchat-1482784434.jpg', 'recources/love/Snapchat_20190212.jpg'];
+  var images = ['recources/love/Screenshot_20190228-192315_Darker-vertical.jpg', 'recources/newtab/dylan-groenewegencropped_7utzke5fhxsc18qirr11ijr4t.jpg', 'recources/newtab/IMG_20190616_102426.jpg', 'recources/love/Snapchat_20190212.jpg'];
   document.getElementsByClassName('body')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 
-</script>	
+</script>
+<!-- Hide elements -->
+<script>
+function ShowElements() {
+  const fadeBox = document.getElementById("content");
+
+  fadeBox.style.transition = "opacity 1s";
+  fadeBox.style.opacity = 1;
+  HideElements();
+}
+	
+function HideElements() {
+var delayInMilliseconds = 10000; //1 second
+
+setTimeout(function() {
+    const fadeBox = document.getElementById("content");
+
+  fadeBox.style.transition = "opacity 1s";
+  fadeBox.style.opacity = 0;
+}, delayInMilliseconds);
+}
+</script>
 <!-- Settings -->
 	
 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -181,9 +229,9 @@ function myFunction() {
   </div>
 </div>
 
-<div class="text-center">
+<!--<div class="text-center">
   <a href="" class="btn btn-light btn-rounded fixed-bottom" data-toggle="modal" data-target="#modalLoginForm" id="settings-button"><i class="fas fa-paint-brush"></i> Customize</a>
-</div>
+</div>-->
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -194,7 +242,9 @@ function image()
 {
 var image = document.getElementById("bg-image").value;
 $("#body").css('background-image', 'url('+ image +')');	
-</script>	
+</script>
+</div>		
+</div>
 </div>
 </body>
 </html>

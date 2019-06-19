@@ -33,7 +33,7 @@ html, body {
 .apps {
 	background-color: rgba(255,255,255,0.80);
 	padding-top: 20px;
-	margin-top: 170px;
+	margin-top: 190px !important;
 	border-radius: 8px;max-width: 90%;
 }
 
@@ -87,7 +87,7 @@ h1 {
 }
 /* Search bar */
 form {
-	padding-top: 120px;
+	padding-top: 180px;
 	width: 80% !important;
 	max-width: 800px;
 }

@@ -15,7 +15,7 @@
 	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
-<div class="mask rgba-black-strong" id="content" style="opacity: 0">	
+<div class="mask rgba-black-strong" id="content" style="">	
 <div id="filler" style="min-height: 100%;">&nbsp;</div>
 
 	
@@ -128,6 +128,7 @@
 
 <script>
 function myFunction() {
+  var delayInMilliseconds = 5000; //5 seconds
   var d = new Date();
   var m = d.getDate();
   var weekday = new Array(7);
@@ -156,7 +157,12 @@ function myFunction() {
   var w = weekday[d.getDay()];
   var n = month[d.getDay()];
   document.getElementById("date").innerHTML = w + ' &#124; ' + m +'&nbsp;' + n ;
+setTimeout(function() {
+    const fadeBox = document.getElementById("content");
 
+  fadeBox.style.transition = "opacity 1s";
+  fadeBox.style.opacity = 0;
+}, delayInMilliseconds);
 }
 	
 </script>
@@ -179,7 +185,7 @@ function ShowElements() {
 }
 	
 function HideElements() {
-var delayInMilliseconds = 10000; //1 second
+var delayInMilliseconds = 10000; //10 seconds
 
 setTimeout(function() {
     const fadeBox = document.getElementById("content");

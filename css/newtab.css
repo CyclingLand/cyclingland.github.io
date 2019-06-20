@@ -7,6 +7,11 @@ html, body {
   background-position: center;
   background-attachment: fixed;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 /*@media screen and (min-width: 575px) {
 		body {
 		background: url(https://lh3.googleusercontent.com/LzXyShyCUJ3FfblVKONn_WtSWvy4GTPUXKV3V7j1xtP02G-jLsnfZ4FIAhqsLa3PoJoNu4vlXZ33g3bvca2NYpvVBW5mh_yISjx3UlRe6jxn5hoKk7lq5ZL7DIGNoGS2AdAo9-NNZpdnMSwRXaq-7q2iz9FanVBG_PtMmy7PlUTz7bmBbDioZ4ZZ3bfiWkRTATdE23lHgjc_YaUA9pyCuxqIgV3oSJjrXDovGRCqYLuEZHnVSc5iG8BAUb46hN30IBbEzFinWrzLtXJaQzxjZv7EfLTxj4f6TB0igUiSU2ANrpOHkOisbDKAM9LBjmlQaCjnQBR1j-QJR50EZrMWhhUjBQUFVK4EAwoKvcIbOd6gSWEsLvGgxLUlOySStscy-_ib_D0pRh2vtcfUw5rIwXzAf2CzG-5BaGo2GE0tAiGuiArFeStwmR7JB2IH2JbzmI6rMRbgNwvYPnAZNhZ27g15AcYQ_hTnfIVLWfgNGO8Ef3WXVIekc1n6Mj6SYuhdZP3_JRmCbQRiaMIiMaCu-ncerNLy8UovjzGkE9kND3NkkszNgd2jUtpEXi0oOnbA7Tt7l6wEfKSp6bfm4WjHt6uVg1UOYKlDJzSGv6NKGJa__qbC9Ije-Z9kLc8-_Av0VWD_m7sOCTWHOeTbVEk4gJcRRbblny9lnyz4ZGG8ALsVQX3g3eK-ppI2sCW3FuwPzBAf2sgra-KxkVt-fxwWoSoUww=w733-h1057-no) 0 0 no-repeat ;

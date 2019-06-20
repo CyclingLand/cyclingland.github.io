@@ -89,6 +89,30 @@
 		
 		<h6 class="align-bottom label">Fancammo</h6>
     </div>
+
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://calendar.google.com"><img class="logo-link align-middle" src="https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw" alt="Google Calendar"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Calendar</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://keep.google.com"><img class="logo-link align-middle" src="https://www.google.com/images/icons/product/keep-512.png" alt="Google Keep"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Google Keep</h6>
+    </div> 
+	  	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://drive.google.com"><img class="logo-link align-middle" src="https://www.androidpolice.com/wp-content/uploads/2015/06/nexus2cee_Drive.png" alt="Google Drive"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Google Drive</h6>
+    </div> 
 	  
 	<div class="col">
 			<div class="image-wrapper">
@@ -96,16 +120,7 @@
 		</div>		
 		
 		<h6 class="align-bottom label">OneDrive</h6>
-    </div>
-	  
-	<div class="col">
-			<div class="image-wrapper">
-     		 	<a href="https://calendar.google.com"><img class="logo-link align-middle" src="https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw" alt="Google Calendar"/></a>
-		</div>		
-		
-		<h6 class="align-bottom label">Calendar</h6>
-    </div> 
-	
+    </div>	
 	</div>
 	
 	<!--  <center><a href="javascript:void(0);" id="read more" onclick="toggleText();" class="btn btn-primary" role="button" target="_blank">All bookmarks</a></center> -->
@@ -128,7 +143,6 @@
 
 <script>
 function myFunction() {
-  var delayInMilliseconds = 5000; //5 seconds
   var d = new Date();
   var m = d.getDate();
   var weekday = new Array(7);
@@ -157,14 +171,7 @@ function myFunction() {
   var w = weekday[d.getDay()];
   var n = month[d.getDay()];
   document.getElementById("date").innerHTML = w + ' &#124; ' + m +'&nbsp;' + n ;
-setTimeout(function() {
-    const fadeBox = document.getElementById("content");
-
-  fadeBox.style.transition = "opacity 1s";
-  fadeBox.style.opacity = 0;
-}, delayInMilliseconds);
-}
-	
+}	
 </script>
 	
 	<!-- Background -->

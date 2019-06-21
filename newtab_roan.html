@@ -1,0 +1,264 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Tab</title>
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="css/newtab.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
+	    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" 
+            integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
+<div class="mask rgba-black-strong" id="content" style="">	
+<div id="filler" style="min-height: 100%;">&nbsp;</div>
+
+	
+<div class="content">
+	<div class="">
+<div class="container" style="padding-top: 50px">
+	<center><h1 id="date"></h1></center>
+	
+	<form action="https://www.google.com/search" method="get" class="google">
+      <input type="text" name="q" class="searchbox shadow" placeholder="Search Google" required autofocus autocomplete="off">
+      <button type="submit" class="shadow">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+	
+<center>
+<div class="apps shadow">
+  <div class="row">
+    <div class="col">
+			<div class="image-wrapper">
+      			<a href="http://www.youtube.com"><img class="logo-link align-middle"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube"/></a>
+			</div>
+			
+			<h6 class="align-bottom label">YouTube</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+      			<a href="http://music.youtube.com"><img class="logo-link align-middle"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Youtube_Music_logo.svg/1024px-Youtube_Music_logo.svg.png" alt="YouTube"/></a>
+			</div>
+				
+		  <h6 class="align-bottom label">YouTube Music</h6>
+    </div>
+			
+	<div class="col">
+			<div class="image-wrapper">
+      			<a href="https://mail.google.com/mail/u/0/?tab=rm#inbox"><img class="logo-link align-middle" src="https://image.flaticon.com/icons/png/512/281/281769.png" alt="Gmail"/></a>
+		</div>
+			
+		<h6 class="align-bottom label">Gmail</h6>
+    </div>
+	  
+		<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://photos.google.com/"><img class="logo-link align-middle" src="https://ssl.gstatic.com/social/photosui/images/logo_photos_color_192.png" alt="Land Designs"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Google Photos</h6>
+	  </div>
+	  			
+    <div class="col">
+			<div class="image-wrapper">
+      			<a href="https://csgliudger-elo.somtoday.nl/home/"><img class="logo-link align-middle" src="https://wise-r.nl/assets/images/somtoday-beeldmerk-4893e9b88b3163e9a795b4f1943fedfe.png" alt="SOMtoday"/></a>
+		</div>
+			
+		  <h6 class="align-bottom label">SOMtoday</h6>		
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://landdesigns.netlify.com"><img class="logo-link align-middle" src="Logo_Vierkant.png" alt="Land Designs"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Land Designs</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="http://fancammo.nl/"><img class="logo-link align-middle" src="recources/newtab/Fancammo_logo.png" alt="Fancammo"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Fancammo</h6>
+    </div>
+
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://calendar.google.com"><img class="logo-link align-middle" src="https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw" alt="Google Calendar"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Calendar</h6>
+    </div>
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://keep.google.com"><img class="logo-link align-middle" src="https://www.google.com/images/icons/product/keep-512.png" alt="Google Keep"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Google Keep</h6>
+    </div> 
+	  	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://drive.google.com"><img class="logo-link align-middle" src="https://www.androidpolice.com/wp-content/uploads/2015/06/nexus2cee_Drive.png" alt="Google Drive"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">Google Drive</h6>
+    </div> 
+	  
+	<div class="col">
+			<div class="image-wrapper">
+     		 	<a href="https://csgliudger-my.sharepoint.com/personal/156920_csgliudger_nl/_layouts/15/onedrive.aspx"><img class="logo-link align-middle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Office_OneDrive_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_OneDrive_%282018%E2%80%93present%29.svg.png" alt="OneDrive"/></a>
+		</div>		
+		
+		<h6 class="align-bottom label">OneDrive</h6>
+    </div>	
+	</div>
+	
+	<!--  <center><a href="javascript:void(0);" id="read more" onclick="toggleText();" class="btn btn-primary" role="button" target="_blank">All bookmarks</a></center> -->
+	
+  </div>
+	
+	
+<a class="weatherwidget-io shadows" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a>
+
+<div class="shadows calendar-div">
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FAmsterdam&amp;src=cmVtY29sYW5kNTlAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c3RkZGVmamYxMTRxbHJzbDY0cGtvZnRpbXZxMGNtZDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmwuZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23E4C441&amp;color=%23EF6C00&amp;color=%23D50000&amp;color=%23009688&amp;showTabs=1&amp;showTz=0&amp;showCalendars=1&amp;showPrint=0&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="embed-responsive-item calendar"></iframe>
+</div>
+	
+</center>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<!-- date script -->
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var m = d.getDate();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var month = new Array(11);
+  month[0] = "Dec";
+  month[1] = "Jan";
+  month[2] = "Feb";
+  month[3] = "Mar";
+  month[4] = "Apr";
+  month[5] = "May";
+  month[6] = "Jun";
+  month[7] = "Jul";
+  month[8] = "Aug";
+  month[9] = "Sep";
+  month[10] = "Oct";
+  month[11] = "Nov";
+  
+  var w = weekday[d.getDay()];
+  var n = month[d.getDay()];
+  document.getElementById("date").innerHTML = w + ' &#124; ' + m +'&nbsp;' + n ;
+}	
+</script>
+	
+	<!-- Background -->
+<script type="text/javascript">
+
+  var images = ['recources/love/Screenshot_20190228-192315_Darker-vertical.jpg', 'recources/newtab/dylan-groenewegencropped_7utzke5fhxsc18qirr11ijr4t.jpg', 'recources/newtab/IMG_20190616_102426.jpg', 'recources/love/Snapchat_20190212.jpg'];
+  document.getElementsByClassName('body')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+
+</script>
+<!-- Hide elements -->
+<script>
+function ShowElements() {
+  const fadeBox = document.getElementById("content");
+
+  fadeBox.style.transition = "opacity 1s";
+  fadeBox.style.opacity = 1;
+  HideElements();
+}
+	
+function HideElements() {
+var delayInMilliseconds = 10000; //10 seconds
+
+setTimeout(function() {
+    const fadeBox = document.getElementById("content");
+
+  fadeBox.style.transition = "opacity 1s";
+  fadeBox.style.opacity = 0;
+}, delayInMilliseconds);
+}
+</script>
+<!-- Settings -->
+	
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Settings</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+	<!--<form id="form" onsubmit="return false;">
+	    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+	    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+	</form>-->
+        <!-- Form -->
+<div class="container">		
+        <form class="md-form" style="color: #757575;">
+
+            <div>
+                <p>Customize the new tab page to your likings</p>
+            </div>
+
+
+            <label for="input">Custom background image</label>
+            <input type="text" id="bg-image" class="form-control" placeholder="http://example.com/image.jpg">
+            <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Dark theme</label>
+            </div>
+            <input class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" onclick="image()">
+
+        </form>
+</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="text-center">
+  <a href="" class="btn btn-light btn-rounded fixed-bottom" data-toggle="modal" data-target="#modalLoginForm" id="settings-button"><i class="fas fa-paint-brush"></i> Customize</a>
+</div>-->
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- set custom background -->	
+<script>
+function image()
+{
+var image = document.getElementById("bg-image").value;
+$("#body").css('background-image', 'url('+ image +')');	
+</script>
+</div>		
+</div>
+</div>
+</body>
+</html>

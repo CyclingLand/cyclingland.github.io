@@ -130,7 +130,17 @@
 	
 <a class="weatherwidget-io shadows" href="https://forecast7.com/en/53d096d06/drachten/" data-label_1="DRACHTEN" data-label_2="WEATHER" data-theme="pure" data-basecolor="rgba(1, 1, 1, 0)" data-shadow="#ededed" >DRACHTEN WEATHER</a>
 
-<div class="shadows calendar-div">
+<div class="shadow switches">
+	<button id="Turn_on" onClick="tunr_on()">Click Me</button>
+<script>
+function turn_on(){
+    xhttp.open("GET", "https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-", true);
+    xhttp.send();
+}
+</script>
+</div>
+	
+<div class="shadow calendar-div">
 		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FAmsterdam&amp;src=cmVtY29sYW5kNTlAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c3RkZGVmamYxMTRxbHJzbDY0cGtvZnRpbXZxMGNtZDdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmwuZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23E4C441&amp;color=%23EF6C00&amp;color=%23D50000&amp;color=%23009688&amp;showTabs=1&amp;showTz=0&amp;showCalendars=1&amp;showPrint=0&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="embed-responsive-item calendar"></iframe>
 </div>
 	

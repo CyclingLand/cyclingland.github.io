@@ -132,7 +132,6 @@ blockquote em{
 }
 	/* Sections */
 #section1 {
-	margin-top: 75px;
    	min-height: 450px;
     background-color: #fdd835;
 	background: -webkit-linear-gradient(45deg, #e4c330, #c3a729);
@@ -146,12 +145,13 @@ blockquote em{
 	background: -o-linear-gradient(70deg, #27304c, #0e2f96);
 	background: linear-gradient(70deg, #27304c, #0e2f96);
 }
-#section3 {
+#fancammo {
+	margin-top: 75px;
    	min-height: 450px;
     background-color: #d2691e;
-	background: -webkit-linear-gradient(#d2691e, #b71c1c);
-	background: -o-linear-gradient(#d2691e, #b71c1c);
-	background: linear-gradient(#d2691e, #b71c1c);
+	background: url(http://fancammo.nl/img/crowd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #section4 {
    	min-height: 450px;
@@ -237,5 +237,32 @@ blockquote em{
 .top-nav p {
 	margin-right: 10px
 }
-
+/*Fancammo*/
+.view,body,html{
+	height:100%;
+}
+#intro {
+	min-height: 100% !important;
+}
+.navbar {
+	background: #B0831B;
+}
+ .navbar-inner {
+   background: rgba(0,0,0,0.4);
+} .transparent {
+   background: rgba(0,0,0,0.00);
+}
+.page-footer,.top-nav-collapse{
+	background-color:var(--Primary);
+}
+.navbar-default {
+  box-shadow: none !important;
+}
+.intro-block {
+	max-width: 40%;
+	text-align: left;
+}
+#intro-home {
+	padding-top: 200px;
+}
 

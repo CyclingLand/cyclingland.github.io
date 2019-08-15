@@ -1,5 +1,5 @@
 ErrorDocument 404 /404.html
-Redirect 301 /intros https://landdesigns.netlify.com/portfolio/intro-outro
+Redirect 301 /intro https://landdesigns.netlify.com/portfolio/intro-outro
 
 <IfModule mod_expires.c>
   ExpiresActive On

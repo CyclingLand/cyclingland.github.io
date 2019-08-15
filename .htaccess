@@ -1,4 +1,6 @@
 ErrorDocument 404 /404.html
+Redirect 301 /intros https://landdesigns.netlify.com/portfolio/intro-outro
+
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -23,3 +25,5 @@ ErrorDocument 404 /404.html
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
+
+

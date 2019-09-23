@@ -43,6 +43,12 @@ html, body {
 	margin-top: 190px !important;
 	border-radius: 8px;max-width: 90%;
 }
+.app-drawer {
+	background-color: #D9DADA;
+	padding-top: 20px;
+	margin: 20px !important;
+	border-radius: 8px;max-width: 90%;
+}
 
 .weatherwidget-io{
 	background-color: rgba(255,255,255,0.80);
@@ -149,7 +155,7 @@ form.google::after {
 }
 
 .label {
-	padding-top: 10px
+	padding-top: 10px;
 }
 
 .content {
@@ -167,3 +173,25 @@ form.google::after {
 #date {
 	text-shadow: 2px 2px 8px #000;
 }
+
+/*Modal*/
+.modal-fullscreen {
+  padding: 10 !important;
+	width: 100% !important;
+}
+  
+  .modal-dialog {
+    min-width: 100% !important;
+    height: 90%;
+    margin: 0;
+    padding: 10;
+  }
+  
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+  
+

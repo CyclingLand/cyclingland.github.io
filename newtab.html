@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 	<meta charset="utf-8">
 	<title>New Tab</title>
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="css/newtab.css" rel="stylesheet">
 	<link href="css/mdb.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
 var on
 on = 0;
 function toggleLight() {
+	launch_toast();
 		if (on < 1) {
     $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
@@ -30,20 +32,29 @@ function toggleLight() {
 		}
 }
 function blue() {
+	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_blue/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
 }
 function red() {
+	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_red/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
 }
 function fade() {
+	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_fade/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
+}
+function launch_toast() {
+    var x = document.getElementById("toast")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 }
 </script>
 </head>
 <body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
+
 <div class="mask rgba-black-strong" id="content" style="">	
 <div id="filler" style="min-height: 100%;">&nbsp;</div>
 
@@ -52,7 +63,9 @@ function fade() {
 	<div class="">
 <div class="container" style="padding-top: 50px">
 	<center><h1 id="date"></h1></center>
-	
+<div id="toast"><div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">De lampen zijn aangepast</div></div>
+
+<!-- http://jsfiddle.net/m8x1g0q8/ -->
 	<form action="https://www.google.com/search" method="get" class="google">
       <input type="text" name="q" class="searchbox shadow" placeholder="Zoeken op Google" required autofocus autocomplete="off">
       <button type="submit" class="shadow">

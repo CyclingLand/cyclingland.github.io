@@ -16,9 +16,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Scripts voor lichten -->
 <script>
-function turn_on() {
+var on
+on = 0;
+function toggleLight() {
+		if (on < 1) {
     $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
+	on = 1;
+		} else {
+    $.post("https://maker.ifttt.com/trigger/turn_off/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+	on = 0;
+		}
 }
 function blue() {
     $.post("https://maker.ifttt.com/trigger/light_blue/with/key/cpuUC_kBRDe3e10PJH77J-",
@@ -327,7 +336,7 @@ function fade() {
 <div class="shadow switches container">
 <h2 class="title">Lampen</h2>	
 <div  class="row">
-	<button id="Turn_on" onClick="turn_on()" class="btn btn-primary"><i class="fas fa-power-off white-text"></i></button>
+	<button id="Toggle" onClick="toggleLight()" class="btn btn-primary"><i class="fas fa-power-off white-text"></i></button>
 	<div style="max-width: 300px">
   <div class="row col">
     <div class="col"><button type="button" id="Blue" onClick="blue()" class="btn btn-primary"></button></div>

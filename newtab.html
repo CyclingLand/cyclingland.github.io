@@ -14,26 +14,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideDown("slow");
-  });
-});
+<!-- Scripts voor lichten -->
+<script>
+function turn_on() {
+    $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+}
+function blue() {
+    $.post("https://maker.ifttt.com/trigger/light_blue/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+}
+function red() {
+    $.post("https://maker.ifttt.com/trigger/light_red/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+}
+function fade() {
+    $.post("https://maker.ifttt.com/trigger/light_fade/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+}
 </script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
 </head>
 <body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
 <div class="mask rgba-black-strong" id="content" style="">	
@@ -331,25 +330,13 @@ $(document).ready(function(){
 	<button id="Turn_on" onClick="turn_on()" class="btn btn-primary"><i class="fas fa-power-off white-text"></i></button>
 	<div style="max-width: 300px">
   <div class="row col">
-    <div class="col"><button type="button" class="btn btn-primary"></button></div>
-    <div class="col"><button type="button" class="btn btn-warning"></button></div>
-    <div class="col"><button type="button" class="btn btn-danger"></button></div>
+    <div class="col"><button type="button" id="Blue" onClick="blue()" class="btn btn-primary"></button></div>
+    <div class="col"><button type="button" id="Fade" onClick="fade()" class="btn mean-fruit-gradient"></button></div>
+    <div class="col"><button type="button" id="Red" onClick="red()" class="btn btn-danger"></button></div>
     <div class="col"><button type="button" class="btn btn-success"></button></div>
-	<button>Send an HTTP POST request to a page and get the result back</button>
   </div>
 </div>
 </div>	
-<script>
-function turn_on(){
-	var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-xhttp.open("POST", "https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-" true);
-xhttp.send();
-</script>
-	 
-<div id="flip">Click to slide down panel</div>
-<div id="panel">Hello world!</div>
-
 </div>
 	
 <div class="shadow calendar-div">
@@ -360,7 +347,7 @@ xhttp.send();
 		<script>(function() {
 
 		  // Customize these as you wish
-		  var pastdays   = 5;       // # of past days to show (0 to 30)
+		  var pastdays   = 0;       // # of past days to show (0 to 30)
 		  var futuredays = 60;      // # of future days to show (0 to 365)
 		  var cachemins  = 10;      // # of minutes to wait before refreshing calendar data (2 to 1440)
 		  var container  = "icjs";  // ID of div to embed calendar into
@@ -483,7 +470,6 @@ setTimeout(function() {
   <a href="" class="btn btn-light btn-rounded fixed-bottom" data-toggle="modal" data-target="#modalLoginForm" id="settings-button"><i class="fas fa-paint-brush"></i> Customize</a>
 </div>-->
 	
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- set custom background -->	

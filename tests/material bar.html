@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body style="background-color:#0000ffff;margin:0px;">
-        <div style="background-color:FFFFFF
-;width:100%;height:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></div>
-    </body>
-  </html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+function turn_on() {
+  $("button").click(function(){
+    $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
+    );
+  });
+}
+</script>
+<button id="Turn_on" onClick="turn_on()" class="btn btn-primary"><i class="fas fa-power-off white-text"></i></button>
+
+</body>
+</html>

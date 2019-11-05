@@ -13,7 +13,27 @@
             integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<!-- Jquery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 </head>
 <body onload="myFunction()" onmousemove="ShowElements()" id="body" class="body">
 <div class="mask rgba-black-strong" id="content" style="">	
@@ -326,16 +346,10 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 xhttp.open("POST", "https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-" true);
 xhttp.send();
 </script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
-    function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  });
-});
-</script>
+	 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
 </div>
 	
 <div class="shadow calendar-div">

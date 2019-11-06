@@ -20,28 +20,34 @@
 var on
 on = 0;
 function toggleLight() {
-	launch_toast();
 		if (on < 1) {
     $.post("https://maker.ifttt.com/trigger/turn_on/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
+	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip is nu <b>aan</b>.</div>');
+	launch_toast();
 	on = 1;
 		} else {
     $.post("https://maker.ifttt.com/trigger/turn_off/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
+	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip is nu <b>uit</b>.</div>');
+	launch_toast();
 	on = 0;
 		}
 }
 function blue() {
+	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip veranderd naar <b>blauw</b>.</div>');
 	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_blue/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
 }
 function red() {
+	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip veranderd naar <b>rood</b>.</div>');
 	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_red/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
 }
 function fade() {
+	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc"><b>Fade effect</b> is gestart op RGB Strip</div>');
 	launch_toast();
     $.post("https://maker.ifttt.com/trigger/light_fade/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
@@ -49,7 +55,7 @@ function fade() {
 function launch_toast() {
     var x = document.getElementById("toast")
     x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 </script>
 </head>

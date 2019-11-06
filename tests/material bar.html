@@ -1,104 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-:root {
-  --primary: hsl(215, 58%, 44%);
-  --accent: hsl(35, 100%, 63%);
-  --header: hsl(0, 0%, 10%);
-  --bg: hsl(0, 0%, 93%);
-}
-
-body {
-  font-family: Montserrat, sans-serif;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--bg);
-}
-
-h1 {
-  color: var(--header);
-}
-
-section {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-a {
-  background-color: var(--primary);
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  border-radius: 3px;
-}
-
-/* Snackbar */
-#snackbar {
-  background-color: var(--accent);
-  color: var(--header);
-  text-align: center;
-  border-radius: 3px;
-  padding: 16px 32px;
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  transition: 0.3s;
-  opacity: 0;
-}
-
-#snackbar.show {
-  transform: translate(-50%, 0%);
-  transition: 0.5s;
-  opacity: 1;
-}	
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speech Recording</title>
 </head>
 <body>
-<script>
-function createSnackBar() {
-  let s = document.createElement('div');
-  s.id = 'snackbar';
-  s.textContent = '🚧 Demo Mode 🚧';
-  document.body.append(s);
-}
-
-// init
-createSnackBar();
-let snackBarTimeout;
-
-function showSnackBar(e) {
-  e.preventDefault();
-  const snackbar = document.querySelector('#snackbar');
-  snackbar.classList.add('show');
-  // to prevent rapid back and forth movements
-  clearTimeout(snackBarTimeout);
-  // remove thyself gracefully
-  snackBarTimeout = setTimeout(() => {
-    snackbar.classList.remove('show');
-  }, 1500);
-}
-
-document
-  .querySelectorAll('a')
-  .forEach(item => item.addEventListener('click', showSnackBar));	
-</script>
-<h1>Click around...</h1>
-    <section>
-      <a href="#">These</a>
-      <a href="#">links</a>
-      <a href="#">will</a>
-      <a href="#">work</a>
-      <a href="#">soon</a>
-      <a href="#">but</a>
-      <a href="#">not</a>
-      <a href="#">today</a>
-    </section>
+  <script>
+    window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+    let finalTranscript = '';
+    let recognition = new window.SpeechRecognition();
+    recognition.interimResults = true;
+    recognition.maxAlternatives = 10;
+    recognition.continuous = true;
+    recognition.onresult = (event) => {
+      let interimTranscript = '';
+      for (let i = event.resultIndex, len = event.results.length; i < len; i++) {
+        let transcript = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript;
+        } else {
+          interimTranscript += transcript;
+        }
+      }
+      document.querySelector('body').innerHTML = finalTranscript + '<i style="color:#ddd;">' + interimTranscript + '</>';
+    }
+    recognition.start();
+  </script>
 </body>
 </html>

@@ -69,15 +69,48 @@ function launch_toast() {
 	<div class="">
 <div class="container" style="padding-top: 50px">
 	<center><h1 id="date"></h1></center>
+	
 <div id="toast"><div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">De lampen zijn aangepast</div></div>
-
-<!-- http://jsfiddle.net/m8x1g0q8/ -->
-	<form action="https://www.google.com/search" method="get" class="google">
-      <input type="text" name="q" class="searchbox shadow" placeholder="Zoeken op Google" required autofocus autocomplete="off">
-      <button type="submit" class="shadow">
+	
+	
+	<form id="search" action="https://www.google.com/search" method="get" class="google">
+	<div class="searchbar shadow">
+      <input id="query" type="text" name="q" class="searchbox" placeholder="Zoeken op Google" required autofocus autocomplete="off">
+	  <button onclick="startDictation()"><i class="fa fa-microphone"></i></button>
+      <button type="submit" class="">
         <i class="fa fa-search"></i>
       </button>
+	</div>
     </form>
+	
+<!-- HTML5 Speech Recognition API -->
+<script>
+  function startDictation() {
+
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = true;
+      recognition.interimResults = false;
+
+      recognition.lang = "NL";
+      recognition.start();
+
+      recognition.onresult = function(e) {
+        document.getElementById('query').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('search').submit();
+      };
+
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+
+    }
+  }
+</script>
 	
 <center>
 <div class="apps shadow">
@@ -406,49 +439,7 @@ setTimeout(function() {
 }, delayInMilliseconds);
 }
 </script>
-<!-- Settings -->
-	
-<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Settings</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-	<!--<form id="form" onsubmit="return false;">
-	    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
-	    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
-	</form>-->
-        <!-- Form -->
-<div class="container">		
-        <form class="md-form" style="color: #757575;">
-
-            <div>
-                <p>Customize the new tab page to your likings</p>
-            </div>
-
-
-            <label for="input">Custom background image</label>
-            <input type="text" id="bg-image" class="form-control" placeholder="http://example.com/image.jpg">
-            <div class="form-check mb-4">
-                <input type="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="checkbox">Dark theme</label>
-            </div>
-            <input class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" onclick="image()">
-
-        </form>
 </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-<!--<div class="text-center">
-  <a href="" class="btn btn-light btn-rounded fixed-bottom" data-toggle="modal" data-target="#modalLoginForm" id="settings-button"><i class="fas fa-paint-brush"></i> Customize</a>
-</div>-->
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

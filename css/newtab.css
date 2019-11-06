@@ -340,8 +340,16 @@ color:#447;
 font-weight:bold;
 }
 /* End calendar */
-
+/* Light Swithes */
+#Toggle {
+	background: red;
+}
 .title {
+	text-align: left;
+	color: #333333;
+	padding-top: 10px;
+}
+.subtitle {
 	text-align: left;
 	color: #333333;
 	padding-top: 10px;
@@ -442,4 +450,15 @@ font-weight:bold;
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 60px; opacity: 0;}
+}
+#gradients {
+	background-color:rgba(255,255,255,0.50) !important;
+	width: auto !important;
+	margin-bottom: 10px;
+	border-radius: 8px !important;
+}
+
+.open-ext {
+	margin-left: 81%;
+	color: dimgray;
 }

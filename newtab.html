@@ -26,12 +26,14 @@ function toggleLight() {
 	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip is nu <b>aan</b>.</div>');
 	launch_toast();
 	on = 1;
+	document.getElementById("Toggle").style.backgroundColor = "green";
 		} else {
     $.post("https://maker.ifttt.com/trigger/turn_off/with/key/cpuUC_kBRDe3e10PJH77J-",
     );
 	$('#toast').html('<div id="img"><i class="far fa-lightbulb white-text"></i></div><div id="desc">RGB Strip is nu <b>uit</b>.</div>');
 	launch_toast();
 	on = 0;
+	document.getElementById("Toggle").style.backgroundColor = "red";
 		}
 }
 function blue() {
@@ -340,20 +342,31 @@ function launch_toast() {
 <div class="shadow switches container">
 <h2 class="title">Lampen</h2>	
 <div  class="row">
-	<button id="Toggle" onClick="toggleLight()" class="btn btn-primary"><i class="fas fa-power-off white-text"></i></button>
-	<div style="max-width: 300px">
-  <div class="row col">
-    <div class="col"><button type="button" id="Blue" onClick="blue()" class="btn btn-primary"></button></div>
-    <div class="col"><button type="button" id="Fade" onClick="fade()" class="btn mean-fruit-gradient"></button></div>
-    <div class="col"><button type="button" id="Red" onClick="red()" class="btn btn-danger"></button></div>
-    <div class="col"><button type="button" class="btn btn-success"></button></div>
+	<div class="col-2">
+	<button id="Toggle" onClick="toggleLight()" class="btn"><i class="fas fa-power-off white-text"></i></button>
+	</div>
+  <div class="row col-6">
+    <div class="col"><button type="button" id="Red" onClick="red()" class="btn red"></button></div>
+    <div class="col"><button type="button" class="btn green"></button></div>
+    <div class="col"><button type="button" id="Blue" onClick="blue()" class="btn blue"></button></div>
+    <div class="col"><button type="button" class="btn yellow"></button></div>
+    <div class="col"><button type="button" class="btn pink"></button></div>
+    <div class="col"><button type="button" class="btn cyan"></button></div>
+    <div class="col"><button type="button" class="btn purple"></button></div>
+    <div class="col"><button type="button" class="btn orange"></button></div>
+
   </div>
-</div>
+  <div class="row col-4 shadow" id="gradients">
+    <div class="col"><button type="button" id="Fade7" onClick="fade()" class="btn mean-fruit-gradient"></button></div>
+	<div class="col"><button type="button" id="FadeRed" onClick="fadeRed()" class="btn young-passion-gradient"></button></div>
+	<div class="col"><button type="button" id="FadeCyan" onClick="fadeCyan()" class="btn aqua-gradient-rgba"></button></div>
+	<div class="col"><button type="button" id="FadePurple" onClick="fadePurple()" class="btn purple-gradient"></button></div>	
+  </div>
 </div>	
 </div>
 	
 <div class="shadow calendar-div">
-		<h2 class="title" style="padding-left:20px;">Agenda</h2>
+		<h2 class="title" style="padding-left:20px;">Agenda <a class="open-ext" href="https://calendar.google.com" target="_blank"><i class="fas fa-external-link-alt"></i></a></h2>
 		<!-- Move this div where you want to insert the calendar -->
 		<div id="icjs" class="embed-responsive-item calendar"></div>
 

@@ -1,17 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title>Contact | Land Designs</title>
+	<title>Land Designs</title>
 	<meta name="keywords" content="Remco Land">
 	<meta name="description" content="Looking for a new design for your website, a new trailer for your YouTube channel, or an instagram post design? Request your design now on Land Designs">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="theme-color" content="#FFFFFF" />	<!-- Import my own Stylesheet -->
-	<link href="css/cyclingland.css" rel="stylesheet">
-	<link href="css/land-designs.css" rel="stylesheet">
+	<link href="css/portfolio.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
+	<link href="css/mdb.min.css" rel="stylesheet">
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -43,11 +46,15 @@
 				<a class="dropdown-item" href="/portfolio/social.html">Social Posts</a>
 			  <div class="dropdown-divider"></div>
 			  <a class="dropdown-item" href="/portfolio/vlogbattle.html">Vlogbattle Breda</a>
-			  <a class="dropdown-item" href="mosweb">MOS</a>
+			  <a class="dropdown-item" href="/portfolio/fancammo.html">Fancammo</a>
 			</div>
 		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active">Contact me</a>	
+		  </li>
+		</ul>
 			<!-- Google Search -->	
-			<script>
+<!--			<script>
   (function() {
     var cx = '004084777620002307613:qznm5a3yrli';
     var gcse = document.createElement('script');
@@ -57,17 +64,26 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script>
-<gcse:searchbox-only resultsUrl="search"></gcse:searchbox-only>
-		</ul>
+</script>-->
+<form class="search" action="/search" method="get">
+<input type="text" class="form-control searchbar" placeholder="Search for projects, articles and more" name="q" id="search" autocomplete="off">
+<button type="submit" class="searchbtn" onclick="location.href='\search?q='+ document.getElementById('search').value"> <i class="material-icons">
+search
+</i></button>
+</form>	
 	  </div>
 	</nav>
 </header>
 <body>
-<div class="container" style="padding-top: 100px">
-<form class="text-center border border-light p-5" name="contact" method="POST" data-netlify="true">
+<div class="animated fadeIn">
+<div id="intro" class="container-fluid" style="padding-bottom: 40px;">
+   <div class="container">
+        <div class="row" style="padding-top: 90px">
+             <div class="col-sm-6 hero-text hero-text-cc">
+                
+				<form class="" name="contact" method="POST" data-netlify="true">
 
-    <p class="h4 mb-4">Contact us</p>
+   <h1 class="title-2"><b>Contact me</b></h1>
 
     <!-- Name -->
     <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
@@ -91,7 +107,50 @@
     <!-- Send button -->
     <button class="btn btn-info btn-block" type="submit">Send</button>
 
-</form>	
+</form>
+
+        </div> <!-- col sm 6 -->
+	<div class="col-sm-5">
+         <div>
+						<!--Card-->
+						<div class="card card-cascade profile-card">
+
+						  <!--Card image-->
+						  <div class="view view-cascade">
+							<img src="resources/Remco_Land.jpg" class="card-img-top" alt="">
+							<a>
+							  <div class="mask rgba-white-slight"></div>
+							</a>
+						  </div>
+						  <!--/.Card image-->
+
+						  <!--Card content-->
+						  <div class="card-body card-body-cascade text-center">
+							<!--Title-->
+							<h4 class="card-title"><strong>Remco land</strong></h4>
+							<h5>Web designer</h5>
+
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex,
+							  recusandae. Facere modi
+							  sunt, quod quibusdam.
+							</p>
+
+							<!--Instagram-->
+							<a href="https://www.instagram.com/_landdesigns/" target="_blank" class="fa fa-instagram"></a>
+							<!--Twitter-->
+
+
+						  </div>
+						  <!--/.Card content-->
+
+						</div>
+						<!--/.Card-->
+
+          </div>
+    </div> <!-- col sm 5 -->
+       </div><!-- row -->
+   </div><!-- container -->
+</div>
 </div>
 </body>
 </html>

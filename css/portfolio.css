@@ -553,3 +553,35 @@ gcse:searchbox-only {
 	background: linear-gradient(#4eabe5, #106aa2);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.profile-card {
+	width: 90%;
+	max-width: 500px;
+	margin-top: 20px !important;
+	max-height: 600px;
+}
+
+.title-2 {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 1.2em;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
